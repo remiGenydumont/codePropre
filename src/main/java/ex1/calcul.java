@@ -1,18 +1,18 @@
 package ex1;
 
 /**
- * Classe qui rÃ©alise des opÃ©rations arythmÃ©tiques
+ * Classe qui réalise des opérations arythmétiques
  * @author DIGINAMIC
  */
 public class calcul {
 
-	/** MÃ©thode qui retourne l'addition des paramÃ¨tres a et b 
+	/** Méthode qui retourne l'addition des paramètres a et b 
 	 * 
-	 * @param a paramÃ¨tre a
-	 * @param b paramÃ¨tre b
-	 * @return int 
+	 * @param a paramètre a
+	 * @param b paramètre b
+	 * @return Integer 
 	 */
-	public int addition(int a, int b){
+	public Integer addition(Integer a, Integer b){
 		return a+b;
 	}
 	
@@ -22,7 +22,7 @@ public class calcul {
 	 * @param b
 	 * @return
 	 */
-	public int get2(int a, int b){
+	public Integer soustraction(Integer a, Integer b){
 		return a-b;
 	}
 }

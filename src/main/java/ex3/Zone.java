@@ -4,29 +4,22 @@ import java.util.List;
 
 public abstract class Zone {
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
+	protected List<Animal> listAnimaux;
 	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
-	}
+	public abstract void addAnimal(String nomAnimal, String comportement);
 	
 	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
+		for (Animal animal: listAnimaux){
+			System.out.println(animal);
 		}
 	}
-	
 	public int compterAnimaux(){
-		return noms.size();
+		return listAnimaux.size();
 	}
 	
-	public abstract double getPoids();
+	public abstract Double getPoids();
 	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * getPoids();
+	public Double calculerKgsNourritureParJour(){
+		return listAnimaux.size() * getPoids();
 	}
 }
